@@ -18,6 +18,7 @@ function handleSubmit(e) {
 
     // перебираємо символи слова
     for (const symbol of word) {
+      // якщо символ зустрічається один раз в слові - додаємо до масиву унікальних символів
       if (word.indexOf(symbol) === word.lastIndexOf(symbol)) {
         uniqueSymbol.push(symbol)
       }
